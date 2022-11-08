@@ -14,7 +14,7 @@ const map1 =  new Map([
     ["apples", 500],
     ["bananas", 300],
     ["oranges", 200],
-    ["apples", 900],
+    ["apples", 900],  
   ]);
 console.log("🚀 ~ file: roughbook.js ~ line 13 ~ map", map1)
 
