@@ -14,21 +14,21 @@
 
 //context vs scope**
 
-const object4 = {
-    a: function () {
-        console.log(this)
-    }
-}
-console.log(this)
-console.log(object4.a())
+// const object4 = {
+//     a: function () {
+//         console.log(this)
+//     }
+// }
+// console.log(this)
+// console.log(object4.a())
 
 //instantation **
 class Player {
     constructor(name, type) {
+        console.log(this,"this this this txxxxxxxxxxxxxxhis");
         this.name = name
         this.type = type
     }
-
     introduce() {
         console.log(`hi iam ${this.name}, ${this.type}`)
     }
@@ -37,9 +37,18 @@ class Player {
 class Wizard extends Player {
     constructor(name, type) {
         super(name, type)
+        console.log(this,"this this this this");
+
     }
     play() {
         console.log(`weee iam  ${this.type}`);
     }
 }
 
+const wizard1 = new Wizard('tharun','yooooooo')
+// const player1 = new Player('tharun','peters')
+
+// player1.introduce()
+
+// console.log(wizard1.play(),'---------->');
+console.log(wizard1.introduce(),'--------sssss');
