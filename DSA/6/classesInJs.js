@@ -25,9 +25,10 @@
 //instantation **
 class Player {
     constructor(name, type) {
-        console.log(this,"this this this txxxxxxxxxxxxxxhis");
+        // console.log(this, "this this this txxxxxxxxxxxxxxhis");
         this.name = name
         this.type = type
+        console.log(this, "this this this txxxxxxxxxxxxxxhis");
     }
     introduce() {
         console.log(`hi iam ${this.name}, ${this.type}`)
@@ -35,20 +36,22 @@ class Player {
 }
 
 class Wizard extends Player {
-    constructor(name, type) {
+    constructor(name, type,language) {
         super(name, type)
-        console.log(this,"this this this this");
-
+        this.language = language
+        this.name = "messi"
+        console.log(this, "this this this this");
     }
     play() {
-        console.log(`weee iam  ${this.type}`);
+        console.log(`weee iam  ${this.type} and ${this.name}`);
     }
 }
 
-const wizard1 = new Wizard('tharun','yooooooo')
+const wizard1 = new Wizard('tharun', 'yooooooo','malayalam')
 // const player1 = new Player('tharun','peters')
 
 // player1.introduce()
 
 // console.log(wizard1.play(),'---------->');
-console.log(wizard1.introduce(),'--------sssss');
+console.log(wizard1.introduce(), '--------sssss');
+wizard1.play()
