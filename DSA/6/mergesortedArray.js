@@ -9,37 +9,38 @@ let a2 = [3, 4]
 
 //solutiion 2 
 
-function mergedArray(a1, a2) {
+function mergedArrayy(a1, a2) {
+    // console.log(a1, "fffffffffffffffffffff");
     const mergedArray = [];
     let i = 0;
-    console.log(i,"iiiiiiiiiiiii");
     let j = 0;
-    console.log(j,"jjjjjjjjji");
-    array1 = a1[i]
-    console.log(array1,"array1array1array1");
-    array2 = a2[j]
-    console.log(array2,"array2array2array2");
+    let array1 = a1[i]
+    let array2 = a2[j]
     if (a1.length <= 0) {
         return a2
     }
     if (a1.length <= 0) {
         return a1
     }
-    while (array1 || array2) {
-        // console.log(array1,"mergedArray");
+    while (array1 != undefined || array2 != undefined) {
+        array1 = a1[i]
+        array2 = a2[j]
+        console.log(array1, "mergedArray",array2);
+        // break
         if (array1 == undefined || array1 > array2) {
+            if (array2 == undefined) break
             mergedArray.push(array2)
-            ++i
-            console.log(i);
-            array1 = a1[i]
+            j = j + 1
         } else {
+            console.log("🥰🥰🥰🥰🥰🥰🥰");
             mergedArray.push(array1)
-            j++
-            array2 = a2[j]
+            i =  i + 1
         }
     }
+
+    return mergedArray
 }
 
-console.log(mergedArray(a1, a2))
+console.log(mergedArrayy(a1, a2),"---------->")
 
 
