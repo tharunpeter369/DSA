@@ -9,3 +9,8 @@
 
 // Map() :- in map we can use any data type as key but in objnect only string as key and no duplicates are allowed
 // Set() :- in set we cant set duplicates like array and it only strores key
+
+
+//fast access byt more memory
+
+https://coggle.it/diagram/W5E5tqYlrXvFJPsq/t/master-the-interview-click-here-for-course-link
