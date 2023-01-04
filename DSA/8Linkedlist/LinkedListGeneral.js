@@ -4,7 +4,7 @@ https://visualgo.net/en/list
 //linked list worked based on the prointer // pointer means somehting like reference
 
 const basket = ['apples', 'grapes', 'pears']
-linkedlist : apples --> grapes --> PerformanceServerTiming
+linkedlist : apples --> grapes --> pears
 
 //apples
 //8947 --> grapes
