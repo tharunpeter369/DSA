@@ -11,7 +11,8 @@ linkedlist : apples --> grapes --> pears
 //          4534 -->  pears 
 //                     372 --> null
 
-//garbage collector ??????????
+//garbage collector ??????????  :- mark and sweep algorithm used for garbage collection
+// https://www.youtube.com/watch?v=DIzouoy13UM 
 
 const obj1 = {a:true}
 const obj2 = obj1        // example of pointer reference
