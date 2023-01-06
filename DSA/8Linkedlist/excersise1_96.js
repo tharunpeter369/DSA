@@ -73,7 +73,7 @@ class LinkedList {
   }
 
   insert(index, value) {
-    console.log(index, value, "🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂");
+    // console.log(index, value, "🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂");
     if (this.length <= index) {
       return this.append(value)
     }
@@ -109,6 +109,32 @@ class LinkedList {
     return this.printList()
   }
 
+  // reverseLinkedList() {
+
+  // }
+
+  reverse() {
+    if (!this.head.next) {
+      return this.head;
+    }
+    let first = this.head;
+    this.tail = this.head;
+    let second = first.next;
+
+    while(second) {
+      const temp = second.next;
+      second.next = first;
+      first = second;
+      second = temp;
+
+      console.log(first,"😘");
+    }
+
+    this.head.next = null;
+    this.head = first;
+    return this.printList();
+  }
+
 }
 const myLinkedList = new LinkedList(10);
 // console.log(myLinkedList, "🥰");
@@ -118,17 +144,19 @@ let ap3 = myLinkedList.append(17)
 
 
 // console.log(ap3, "🥰");
-console.dir(ap3, { depth: null })
+// console.dir(ap3, { depth: null })
 
-// let pre1 = myLinkedList.prepend(22)
-// let pre2 = myLinkedList.prepend(23)
+let pre1 = myLinkedList.prepend(22)
+let pre2 = myLinkedList.prepend(23)
 // console.log(pre1, "😁😁😁😁");
-// let insert = myLinkedList.insert(200, 99)
+let insert = myLinkedList.insert(200, 99)
 // // myLinkedList.printList()
-// let insert1 = myLinkedList.insert(2, 89)
-// let insert2 = myLinkedList.insert(2, 88)
+let insert1 = myLinkedList.insert(2, 89)
+let insert2 = myLinkedList.insert(2, 88)
 // let rm = myLinkedList.removeLinkedList(2)
-// console.log(rm, "🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂");
+// console.log( "🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂");
+myLinkedList.printList()
+myLinkedList.reverse()
 // myLinkedList.printList()
 // console.log(ap2, "ap2🙂");
 // console.log(pre1, "🤑🤑🤑🤑");
