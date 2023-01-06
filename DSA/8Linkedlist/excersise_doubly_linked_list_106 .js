@@ -75,7 +75,6 @@ class DoublyLinkedList {
   }
 
   insert(index, value) {
-    console.log(index, value, "🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂");
     if (this.length <= index) {
       return this.append(value)
     }
@@ -111,7 +110,9 @@ class DoublyLinkedList {
     const leader = this.traverseToinedex(index - 1)
     const holdingPointer = leader.next.next
     leader.next = holdingPointer
+    leader.next.prev = holdingPointer
     this.length--;
+    return this
     return this.printList()
   }
 
@@ -130,12 +131,14 @@ let pre2 = myLinkedList.prepend(23)
 // console.dir(pre2, { depth: null })
 
 // let insert = myLinkedList.insert(200, 99)
-// myLinkedList.printList()
 let insert1 = myLinkedList.insert(2, 89)
-console.dir(insert1, { depth: null })
+// console.dir(insert1, { depth: null })
+myLinkedList.printList()
 
 // let insert2 = myLinkedList.insert(2, 88)
-// let rm = myLinkedList.removeLinkedList(2)
+let rm = myLinkedList.removeLinkedList(2)
+console.dir(rm, { depth: null })
+
 // console.log(rm, "🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂");
 // myLinkedList.printList()
 // console.log(ap2, "ap2🙂");

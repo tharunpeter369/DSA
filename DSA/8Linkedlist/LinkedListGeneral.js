@@ -16,3 +16,11 @@ linkedlist : apples --> grapes --> pears
 
 const obj1 = {a:true}
 const obj2 = obj1        // example of pointer reference
+
+
+//   SinglyLinkedList    vs       DoublyLinkedList
+
+//    less memory               more memory
+//    less faster               more faster
+//    not traverse backware     traverse backwards
+//    less complex              More complex
