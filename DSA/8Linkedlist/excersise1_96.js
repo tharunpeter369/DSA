@@ -69,7 +69,7 @@ class LinkedList {
       array.push(currentNode?.value);
       currentNode = currentNode.next
     }
-    console.log(array, "🥰🥰🥰");
+    console.log(array, "😀");
   }
 
   insert(index, value) {
@@ -120,14 +120,19 @@ class LinkedList {
     let first = this.head;
     this.tail = this.head;
     let second = first.next;
+    console.log("-->", first);
 
-    while(second) {
-      const temp = second.next;
-      second.next = first;
-      first = second;
-      second = temp;
+    while (second) {                      // 3
+      // console.log(first,"---->");
+      const temp = second.next;   //3
+      second.next = first;        //1
+      first = second;             //2
+      second = temp;              //3
 
-      console.log(first,"😘");
+      // console.dir("-->",first,{ depth: null });
+      console.log("-->", first);
+      console.log(first?.next?.value, first?.next?.next);
+
     }
 
     this.head.next = null;
@@ -136,27 +141,26 @@ class LinkedList {
   }
 
 }
-const myLinkedList = new LinkedList(10);
+const myLinkedList = new LinkedList(1);
 // console.log(myLinkedList, "🥰");
-let ap1 = myLinkedList.append(5)
-let ap2 = myLinkedList.append(16)
-let ap3 = myLinkedList.append(17)
+let ap1 = myLinkedList.append(2)
+let ap2 = myLinkedList.append(3)
+let ap3 = myLinkedList.append(4)
 
 
 // console.log(ap3, "🥰");
 // console.dir(ap3, { depth: null })
+// myLinkedList.printList()
 
-let pre1 = myLinkedList.prepend(22)
-let pre2 = myLinkedList.prepend(23)
+
+// let pre1 = myLinkedList.prepend(22)
+// let pre2 = myLinkedList.prepend(23)
 // console.log(pre1, "😁😁😁😁");
-let insert = myLinkedList.insert(200, 99)
+// let insert = myLinkedList.insert(200, 99)
 // // myLinkedList.printList()
-let insert1 = myLinkedList.insert(2, 89)
-let insert2 = myLinkedList.insert(2, 88)
+// let insert1 = myLinkedList.insert(2, 89)
+// let insert2 = myLinkedList.insert(2, 88)
 // let rm = myLinkedList.removeLinkedList(2)
 // console.log( "🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂");
 myLinkedList.printList()
 myLinkedList.reverse()
-// myLinkedList.printList()
-// console.log(ap2, "ap2🙂");
-// console.log(pre1, "🤑🤑🤑🤑");
