@@ -114,27 +114,34 @@ class LinkedList {
   // }
 
   reverse() {
+    
     if (!this.head.next) {
       return this.head;
     }
     let first = this.head;
     this.tail = this.head;
     let second = first.next;
-    console.log("-->", first);
+    console.log("--> first", first);
+    console.log("second", second);
 
     while (second) {                      // 3
       // console.log(first,"---->");
       const temp = second.next;   //3
+      console.log("temp😃", temp);
       second.next = first;        //1
+      console.log("second again🥰", second);
+      console.log("second again😇", second?.next?.value,second?.next?.next?.value,second?.next?.next?.next?.value,second?.next?.next?.next?.next?.value);
+
+
       first = second;             //2
       second = temp;              //3
+      console.log("--====>",first);
+      console.log("secondsecondsecondsecond", second);
+      console.log("++++++++++++>",first);
 
-      // console.dir("-->",first,{ depth: null });
-      console.log("-->", first);
-      console.log(first?.next?.value, first?.next?.next);
-
+      console.log("💔💔",first?.next?.value,"ppppppppp", first?.next?.next);
+      console.log("--------------------------------------------------------");
     }
-
     this.head.next = null;
     this.head = first;
     return this.printList();
