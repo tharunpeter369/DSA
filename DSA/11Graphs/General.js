@@ -1,7 +1,7 @@
 // a graph is pair of set values related in a pair vise fashion
 
 
-// we can see the graph in face booke of connectin people and in google maps for connectin places(shortest path)
+// we can see the graph in facebook of connectin people and in google maps for connectin places(shortest path)
 
 // linkes list are type of trees and trees are type of graph 
 
@@ -17,3 +17,7 @@
 // another type image 5
 // 1.cyclic graph
 // 2.acyclic graph
+
+
+
+//most of the time we use tools like neo4j to implement graph
