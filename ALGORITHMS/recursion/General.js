@@ -5,7 +5,7 @@
 //  Once an algorithm is designed, it can be translated into a specific programming language and implemented in software.
 
 
-function recursion(){
+function recursion() {
      recursion()
 }
 
@@ -18,8 +18,8 @@ recursion()
 
 // recursion example
 let counter = 0
-function inception(){
-     if(counter > o){
+function inception() {
+     if (counter > o) {
           return 'done'
      }
      counter += 1
@@ -27,3 +27,13 @@ function inception(){
 }
 
 inception()
+
+
+// we cant talk about recursion without talking about fibnocci series  problem 161.js
+
+// 0,1,1,2,3,5,8,13,21,34,
+
+
+
+// recursion is not a good aporoaca as it seems cause it uses lot of stack memory make program slow
+// its complexity: o(2^n)   imag :8
