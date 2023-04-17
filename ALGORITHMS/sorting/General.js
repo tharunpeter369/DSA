@@ -32,3 +32,6 @@ https://www.toptal.com/developers/sorting-algorithms
 
 
 https://www.youtube.com/user/AlgoRythmics/videos
+
+
+// q1. sort 10 schools around your house by distance
