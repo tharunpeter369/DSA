@@ -1,0 +1,1 @@
+//devide and find  o(log n)
